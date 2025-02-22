@@ -1,0 +1,166 @@
+/* Navbar container - Fixed at the top */
+/* ======== General Styles ======== */
+body {
+  background: #1E1E1E; /* Dark Gray */
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== Navbar Styling ======== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1E1E1E;  /* Dark Gray */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #F8D210;  /* Golden Yellow */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #FF5733;  /* Orange-Red */
+}
+
+/* Push content down to avoid overlap with fixed navbar */
+.content {
+  margin-top: 80px; /* Adjust this based on navbar height */
+  padding: 20px;
+  background: #2C2C2C; /* Darker Gray for Content */
+  border-radius: 10px;
+}
+
+/* ======== Buttons Styling ======== */
+button {
+  background: #6A11CB; /* Purple */
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #FF5733; /* Orange-Red */
+}
+
+/* ======== Footer Styling ======== */
+.footer {
+  background: #1E1E1E;  /* Dark Gray */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  color: #F8D210;  /* Golden Yellow */
+  border-bottom: 2px solid #3A3A3A;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #FF5733;  /* Orange-Red */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #3A3A3A;
+  padding: 15px 0;
+}
+
+/* ======== Card Styling ======== */
+.card {
+  background: #2C2C2C;  /* Dark Gray */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+.card-title {
+  color: #F8D210; /* Golden Yellow */
+  font-size: 22px;
+}
+
+/* ======== Forms Styling ======== */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #3A3A3A;
+  background: #2C2C2C;
+  color: white;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: #6A11CB; /* Purple */
+  outline: none;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
